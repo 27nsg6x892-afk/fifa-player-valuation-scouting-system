@@ -1,0 +1,205 @@
+{
+    "baseline_linear_regression": [
+        {
+            "Model": "Baseline Linear Regression",
+            "Split": "Train",
+            "MAE": 2.3360080818060656,
+            "MSE": 23.005954559577926,
+            "RMSE": 4.796452288887895,
+            "R2": 0.5427612397536801
+        },
+        {
+            "Model": "Baseline Linear Regression",
+            "Split": "Test",
+            "MAE": 2.538496291298557,
+            "MSE": 31.140021014222228,
+            "RMSE": 5.580324454207141,
+            "R2": 0.49799960179383174
+        }
+    ],
+    "polynomial_results": [
+        {
+            "Degree": 1,
+            "Train_R2": 0.5427612397536801,
+            "Test_R2": 0.49799960179383174,
+            "Train_Test_Gap": 0.04476163795984833
+        },
+        {
+            "Degree": 2,
+            "Train_R2": 0.7491554659475161,
+            "Test_R2": 0.6896401902891771,
+            "Train_Test_Gap": 0.05951527565833903
+        },
+        {
+            "Degree": 3,
+            "Train_R2": 0.8799837714550627,
+            "Test_R2": 0.8217395719814475,
+            "Train_Test_Gap": 0.058244199473615144
+        },
+        {
+            "Degree": 4,
+            "Train_R2": 0.9333012554072116,
+            "Test_R2": 0.874655939193759,
+            "Train_Test_Gap": 0.0586453162134527
+        }
+    ],
+    "regularization_results": [
+        {
+            "Model": "Ridge",
+            "Alpha": 0.001,
+            "Train_RMSE": 1.8441888299919156,
+            "Test_RMSE": 2.7555505007177477
+        },
+        {
+            "Model": "Lasso",
+            "Alpha": 0.001,
+            "Train_RMSE": 1.8893504528822964,
+            "Test_RMSE": 2.6353568356863812
+        },
+        {
+            "Model": "Ridge",
+            "Alpha": 0.01,
+            "Train_RMSE": 1.84416907428611,
+            "Test_RMSE": 2.754474268196776
+        },
+        {
+            "Model": "Lasso",
+            "Alpha": 0.01,
+            "Train_RMSE": 2.040637125317374,
+            "Test_RMSE": 2.6766734375766448
+        },
+        {
+            "Model": "Ridge",
+            "Alpha": 0.1,
+            "Train_RMSE": 1.8469832516874007,
+            "Test_RMSE": 2.7658739274359876
+        },
+        {
+            "Model": "Lasso",
+            "Alpha": 0.1,
+            "Train_RMSE": 2.121909301031089,
+            "Test_RMSE": 2.7723205979800136
+        },
+        {
+            "Model": "Ridge",
+            "Alpha": 1.0,
+            "Train_RMSE": 1.8608557919456306,
+            "Test_RMSE": 2.7249352219574736
+        },
+        {
+            "Model": "Lasso",
+            "Alpha": 1.0,
+            "Train_RMSE": 2.2849235488669617,
+            "Test_RMSE": 2.9801397412629482
+        },
+        {
+            "Model": "Ridge",
+            "Alpha": 10.0,
+            "Train_RMSE": 1.913818571424349,
+            "Test_RMSE": 2.6499959573197867
+        },
+        {
+            "Model": "Lasso",
+            "Alpha": 10.0,
+            "Train_RMSE": 4.342360365327498,
+            "Test_RMSE": 5.095877110963453
+        },
+        {
+            "Model": "Ridge",
+            "Alpha": 100.0,
+            "Train_RMSE": 1.9875957318564113,
+            "Test_RMSE": 2.653736481779454
+        },
+        {
+            "Model": "Lasso",
+            "Alpha": 100.0,
+            "Train_RMSE": 7.0933045980115415,
+            "Test_RMSE": 7.876935989901261
+        },
+        {
+            "Model": "Ridge",
+            "Alpha": 1000.0,
+            "Train_RMSE": 2.0484808042720366,
+            "Test_RMSE": 2.6843223744015337
+        },
+        {
+            "Model": "Lasso",
+            "Alpha": 1000.0,
+            "Train_RMSE": 7.0933045980115415,
+            "Test_RMSE": 7.876935989901261
+        }
+    ],
+    "best_regression": {
+        "best_polynomial_degree": 4,
+        "best_regression_model": "Lasso",
+        "cv_rmse_mean": 2.165443728739244,
+        "cv_rmse_std": 0.4291917246776222
+    },
+    "logistic_regularization_results": [
+        {
+            "C": 0.001,
+            "Train_Accuracy": 0.795970253607068,
+            "Test_Accuracy": 0.78266395526182
+        },
+        {
+            "C": 0.01,
+            "Train_Accuracy": 0.8560986461577575,
+            "Test_Accuracy": 0.8469750889679716
+        },
+        {
+            "C": 0.1,
+            "Train_Accuracy": 0.8848280683912795,
+            "Test_Accuracy": 0.8647686832740213
+        },
+        {
+            "C": 1.0,
+            "Train_Accuracy": 0.9182609801055107,
+            "Test_Accuracy": 0.8721403152008135
+        },
+        {
+            "C": 10.0,
+            "Train_Accuracy": 0.9413970634971079,
+            "Test_Accuracy": 0.8657854600915099
+        },
+        {
+            "C": 100.0,
+            "Train_Accuracy": 0.9489607830674379,
+            "Test_Accuracy": 0.8571428571428571
+        },
+        {
+            "C": 1000.0,
+            "Train_Accuracy": 0.9501684357719443,
+            "Test_Accuracy": 0.8535841382816471
+        }
+    ],
+    "naive_bayes_comparison": [
+        {
+            "Model": "GaussianNB no scaling",
+            "Accuracy": 0.7178444331469243,
+            "Weighted_F1": 0.718586287854594
+        },
+        {
+            "Model": "GaussianNB scaled",
+            "Accuracy": 0.7178444331469243,
+            "Weighted_F1": 0.718586287854594
+        },
+        {
+            "Model": "BernoulliNB",
+            "Accuracy": 0.6916624300965938,
+            "Weighted_F1": 0.683057855332786
+        },
+        {
+            "Model": "ComplementNB",
+            "Accuracy": 0.5297407219115404,
+            "Weighted_F1": 0.5052497636278926
+        }
+    ],
+    "classification_cv": {
+        "best_logistic_model": "Logistic Regression L1",
+        "best_nb_model": "GaussianNB no scaling",
+        "logistic_cv_accuracy_mean": 0.8847820076262138,
+        "logistic_cv_accuracy_std": 0.003425466447853433,
+        "nb_cv_accuracy_mean": 0.716937503385055,
+        "nb_cv_accuracy_std": 0.00705953758107916
+    }
+}

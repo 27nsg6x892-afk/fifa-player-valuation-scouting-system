@@ -1,0 +1,106 @@
+{
+    "group_members": [
+        {
+            "name": "Mark samy sabry sadek",
+            "id": "2403244970"
+        },
+        {
+            "name": "youssef hytham mohamed",
+            "id": "2403249968"
+        },
+        {
+            "name": "mazen mahmoud abdelmoaem",
+            "id": "2403245685"
+        },
+        {
+            "name": "fares samir mohamed",
+            "id": "2403248904"
+        },
+        {
+            "name": "ahmed mohamed mohamed",
+            "id": "2403244868"
+        }
+    ],
+    "best_hyperparameters": {
+        "knn_regressor": {
+            "model__n_neighbors": 11,
+            "model__p": 2,
+            "model__weights": "distance"
+        },
+        "svm_regression": {
+            "model__C": 10,
+            "model__epsilon": 0.1,
+            "model__gamma": "scale",
+            "model__kernel": "rbf"
+        },
+        "random_forest_regressor": {
+            "model__max_depth": 20,
+            "model__min_samples_leaf": 1,
+            "model__min_samples_split": 2,
+            "model__n_estimators": 100
+        },
+        "knn_classifier": {
+            "model__n_neighbors": 11,
+            "model__p": 2,
+            "model__weights": "distance"
+        },
+        "svm_classifier": {
+            "model__C": 1,
+            "model__gamma": "scale",
+            "model__kernel": "rbf"
+        },
+        "random_forest_classifier": {
+            "model__max_depth": null,
+            "model__min_samples_leaf": 1,
+            "model__min_samples_split": 5,
+            "model__n_estimators": 100
+        },
+        "final_regression_model": {
+            "model_name": "Voting Regressor Ensemble",
+            "parameters": "Voting ensemble of KNN, SVM, and Random Forest"
+        },
+        "final_classification_model": {
+            "model_name": "SVM Classifier",
+            "parameters": {
+                "model__C": 1,
+                "model__gamma": "scale",
+                "model__kernel": "rbf"
+            }
+        }
+    },
+    "cv_stability": {
+        "regression": {
+            "final_model": "Voting Regressor Ensemble",
+            "cv_r2_mean": 0.9680871917163267,
+            "cv_r2_std": 0.007808050431552631,
+            "cv_r2_individual_scores": [
+                0.9757708466311421,
+                0.9661967162644135,
+                0.977698870604354,
+                0.9564365600402646,
+                0.96433296504146
+            ],
+            "cv_rmse_mean": 1.7900201777553455,
+            "cv_rmse_std": 0.4444333277941352,
+            "cv_rmse_individual_scores": [
+                2.3464084026005687,
+                1.3934615034668643,
+                1.2186815500537473,
+                2.229954761998555,
+                1.7615946706569918
+            ]
+        },
+        "classification": {
+            "final_model": "SVM Classifier",
+            "cv_accuracy_mean": 0.8604266739880803,
+            "cv_accuracy_std": 0.004983660612548413,
+            "cv_accuracy_individual_scores": [
+                0.8540925266903915,
+                0.8553634977122522,
+                0.8619374523264683,
+                0.8672768878718535,
+                0.8634630053394355
+            ]
+        }
+    }
+}
