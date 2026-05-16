@@ -109,3 +109,6 @@ fifa-player-valuation-scouting-system/
 
 ```bash
 git clone https://github.com/27nsg6x892-afk/fifa-player-valuation-scouting-system.git
+pip install -r requirements.txt
+jupyter notebook fifa_player_valuation_scouting.ipynb
+
