@@ -101,4 +101,11 @@ fifa-player-valuation-scouting-system/
 ├── results.json
 ├── assignment2_summary.json
 ├── README.md
-└── sample_data/
+
+
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/27nsg6x892-afk/fifa-player-valuation-scouting-system.git
